@@ -23,12 +23,12 @@ def callback():
     user = decoded["originalDetectlntentRequest"]['payload']['data']['replyToken']
     userText = decoded["queryResult"]['intent']['displayName']
     sendText(user,userText)
-    if (user text == 'สวัสดี') :
-        sendtext(user,'ดีจ้า')
-    elif (usertext == 'สบายดีป่ะ') :
-        sendtext(user'สบายดีค่ะ')
+    if (userText == 'สวัสดี') :
+        sendText(user,'ดีจ้า')
+    elif (userText == 'สบายดีป่ะ') :
+        sendText(user'สบายดีค่ะ')
     else :
-        sendtext(user'ว่าอะไรนะคะ')
+        sendText(user'ว่าอะไรนะคะ')
  return'',200
 
 def sendText(user, text):
